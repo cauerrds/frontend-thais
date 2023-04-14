@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { FaleConosco } from "./styles"
+import { FaleConosco } from "@/styles/fale-conosco.styles"
 import Formulario from "@/components/formulario/Formulario"
 import AsideFormulario from "@/components/aside-formulario/AsideFormulario"
 
