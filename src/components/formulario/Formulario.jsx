@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Form } from "./styles"
 import emailjs from '@emailjs/browser';
-import { IoLogoWhatsapp } from "react-icons/Io";
+import { IoLogoWhatsapp } from "react-icons/io";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
 export default function Formulario() {
