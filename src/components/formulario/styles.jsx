@@ -102,6 +102,7 @@ animation: scale 1s ease-in-out infinite;
 
 @media (max-width:  1100px)
 {
+  margin: 0 auto;
   .box {
     width: 300px;
   }
