@@ -2,8 +2,8 @@ import React from 'react'
 import { AsideForm, Container } from "./styles"
 import Image from "next/image"
 import qrcode from "../../../public/assets/qrcode.jpg"
-import { IoLogoWhatsapp } from 'react-icons/Io'
-import { HiOutlineMail } from 'react-icons/Hi'
+import { IoLogoWhatsapp } from 'react-icons/io'
+import { HiOutlineMail } from 'react-icons/hi'
 
 
 export default function AsideFormulario() {

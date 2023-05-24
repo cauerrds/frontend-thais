@@ -2,7 +2,7 @@ import { Aside, Container, StyledMain } from "./styles"
 import Image from 'next/image';
 import gravata from "../../../public/assets/gravata.png"
 import madeira from "../../../public/assets/madeira.png"
-import { IoLogoWhatsapp } from 'react-icons/Io'
+import { IoLogoWhatsapp } from 'react-icons/io'
 import { useEffect, useState } from "react";
 
 export default function MainContent() {
