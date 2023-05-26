@@ -34,7 +34,7 @@ export default function MainContent() {
                     /> : null}
                     <Aside>
                         <h1 className="titulo">Consumidor</h1>
-                        <p className="conteudo"><i>Você conhece seus</i><u>direitos</u>?
+                        <p className="conteudo">Você conhece seus <u>direitos</u>?
                         </p>
 
 

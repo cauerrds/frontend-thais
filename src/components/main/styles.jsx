@@ -131,6 +131,7 @@ a:hover {
 
     .conteudo, span, .titulo {
         font-size: 48px;
+        font-family: 'Didot';
     }
 
     
