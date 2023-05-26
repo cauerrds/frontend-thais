@@ -29,6 +29,8 @@ height: 60vh;
 
 .conteudo {
     font-size: 58px;
+    font-family: 'GFS Didot', serif;
+    font-style: italic;
 
 }
 
@@ -45,6 +47,7 @@ text-decoration-color: var(--tertiary-logo);
 
 @media (max-width:  1100px){
     height: inherit;
+}
 `
 
 
@@ -131,7 +134,6 @@ a:hover {
 
     .conteudo, span, .titulo {
         font-size: 48px;
-        font-family: 'Didot';
     }
 
     
