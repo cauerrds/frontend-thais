@@ -23,6 +23,7 @@ justify-content: space-around;
   .carousel-wrapper{
     height: 50%;
     max-width: 100%;
+    padding: 5px;
 
     .control-next.control-arrow::before{
       border-left: 8px solid black;
