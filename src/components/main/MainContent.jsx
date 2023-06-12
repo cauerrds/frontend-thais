@@ -26,20 +26,10 @@ export default function MainContent() {
             <Container>
 
                 <div className="box">
-                    {fundo ? <Image
-                        src={fundo}
-                        alt="Imagem de fundo"
-                        className="bg-image"
-                        quality={100}
-                    /> : null}
                     <Aside>
                         <h1 className="titulo">Consumidor</h1>
-                        <p className="conteudo">Você conhece seus <u>direitos</u>?
-                        </p>
-
-
+                        <p className="conteudo">Você conhece seus <u>direitos</u>?</p>
                         <div className="container-icon">
-
                             <a href="https://wa.me/46991071608">
                                 <IoLogoWhatsapp className="icon" alt="chat-whatsapp" />
                                 Fale conosco

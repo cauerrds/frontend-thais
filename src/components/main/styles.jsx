@@ -1,9 +1,13 @@
 import styled from "styled-components";
+import estatua from "../../../public/assets/estatua.jpg"
 
 
 export const Container = styled.main`
 width: 100%;
 background-color: #F2EEE5;
+background-image: url(${estatua.src});
+background-repeat: no-repeat; /* Do not repeat the image */
+background-size: cover; /* Resize the background image to cover the entire container */
 
 .box {
     display: flex;
@@ -11,10 +15,11 @@ background-color: #F2EEE5;
     justify-content: flex-end;
 }
 
-color: #3C2505;
+color: var(--primary-white);
 `
 
 export const Aside = styled.aside`
+
 display: flex;
 flex-direction: column;
 align-items: flex-start;
@@ -54,7 +59,6 @@ text-decoration-color: var(--tertiary-logo);
 
 export const StyledMain = styled.main`
 display: flex;
-padding-top: 200px;
 
 .bg-image {
     width: 100vw;
@@ -91,6 +95,11 @@ p {
         animation: scale 1s ease-in-out infinite;
 
     }
+
+    .container-icon {
+        justify-content: end;
+        width: 100%;
+    }
     @keyframes scale {
         0% {
           transform: scale(1);
@@ -111,7 +120,7 @@ a {
     padding: 10px;
     font-family: 'MyFont', sans-serif;
     display: flex;
-    color: #3C2505;
+    color: var(--primary-white);
     border-radius: 5px;
     padding: 10px 20px;
     text-decoration-color: var(--tertiary-logo);
@@ -132,8 +141,16 @@ a:hover {
         position: absolute;
     }
 
-    .conteudo, span, .titulo {
+    span, .titulo {
+        align-self: flex-end;
+        padding-inline-end: 5px;
         font-size: 48px;
+    }
+
+    .conteudo{
+        font-size: 48px;
+        text-align: end;
+        padding-right: 10px;
     }
 
     

@@ -1,7 +1,8 @@
 import styled from "styled-components";
+
 export const ContainerValores = styled.div`
 width: 100vw;
-height: calc(100vh - 100px);
+height: calc(90vh - 100px);
 padding-top: 60px;
 background-color: #f2eee5;
 
@@ -9,61 +10,47 @@ display: flex;
 flex-direction: column;
 justify-content: space-around;
 
-.container {
+
+.content{
+  height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-
-.icon {
-  height: 80px;
-  width: 80px;
-  border: solid 1px ;
-  border-radius: 8px;
-  padding: 4px;
-  box-shadow: #89857A 0px 30px 40px -16px inset, rgba(0, 0, 0, 0.1) 0px 18px 36px -18px inset;
-}
-
-div {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  justify-content: space-between;
   align-items: center;
+  padding: 5px;
+  column-gap: 10px;
+
+  .carousel-wrapper{
+    height: 50%;
+    max-width: 100%;
+
+    .control-next.control-arrow::before{
+      border-left: 8px solid black;
+    }
+    
+    .control-prev.control-arrow::before{
+      border-right: 8px solid black;
+    }
+
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  img {
+    height: 80%;
+    border-style: outset;
+    border-color: var(--primary-logo);
+  }
 }
 
-div > p {
-  width: 300px;
-  font-size: 22px;
-}
 
-
-@media (max-width: 900px)
-
-{
+@media (max-width: 900px){
   background: rgb(242,238,229);
-background: linear-gradient(180deg, rgba(242,238,229,1) 0%, rgba(60,37,5,1) 98%);
-  .container {
 
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-
-  }
-
-  .humanizado {
-    order: 3;
-  }
-  
-  .consumidor {
-    order: 2;
-  }
-
-  .container > div {
-    display: flex;
-    flex-direction: row;
-    animation: myAnim 1s ease 0s 1 normal forwards;
-   
+  .content > img {
+    display: none;
   }
 
   @keyframes myAnim {
@@ -78,25 +65,7 @@ background: linear-gradient(180deg, rgba(242,238,229,1) 0%, rgba(60,37,5,1) 98%)
     }
   }
 
-  h1 {
-    font-size: 18px;
-  }
-  
-  p {
-    display: none;
-  }
-
 }
-
-.humanizado {
-  padding-right: 10px;
-}
-
-.text {
-  width: 270px;
-  font-size: 16px;
-}
-
 
 `
 
@@ -104,18 +73,22 @@ export const ContainerJustiça = styled.div`
 h1 {
   color: #3c2505;
   font-size: 80px;
+  text-align: center;
 }
 
-@media (max-width:  900px)
-{
+@media (max-width: 765px){
   h1 {
-    font-size: 32px;
-  color: #FFF;
+    font-size: 40px;
+    text-align: center;
   }
-
-
 }
 
+@media (max-width: 370px){
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
 
 
 `
