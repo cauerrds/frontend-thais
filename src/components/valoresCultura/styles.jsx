@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContainerValores = styled.div`
 width: 100vw;
-height: calc(90vh - 100px);
+height: calc(100vh - 100px);
 padding-top: 60px;
 background-color: #f2eee5;
 
@@ -12,14 +12,16 @@ justify-content: space-around;
 
 
 .content{
-  height: 100%;
+  height: 86%;
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 5px;
   column-gap: 10px;
-
+ 
   .carousel-wrapper{
     height: 50%;
     max-width: 100%;
@@ -35,8 +37,9 @@ justify-content: space-around;
 
   }
 
-  p {
+  .carousel-item {
     margin-bottom: 10px;
+    font-size: 24px;
   }
 
   img {
@@ -46,6 +49,14 @@ justify-content: space-around;
   }
 }
 
+@media (max-width: 470px) {
+  .content {
+    .carousel-item{
+     font-size: 18px;
+   }
+
+  }
+}
 
 @media (max-width: 900px){
   background: rgb(242,238,229);
@@ -65,8 +76,8 @@ justify-content: space-around;
       transform: translateX(0);
     }
   }
-
 }
+
 
 `
 

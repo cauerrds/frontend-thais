@@ -4,8 +4,8 @@ import ValoresCultura from "@/components/valoresCultura/ValoresCultura"
 
 export default function Page2() {
     return (
-        <QuemSomos>
-            <ValoresCultura></ValoresCultura>
+        <QuemSomos id="page2">
+            <ValoresCultura/>
         </QuemSomos>
     )
 }

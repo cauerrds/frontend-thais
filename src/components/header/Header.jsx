@@ -22,13 +22,9 @@ export default function Header() {
 
 
 
-    function goToScreen(screenNumber, size) {
-        let scrollTop = screenHeight * (screenNumber - 1) - (mobile && size ? size : 100);
-        (!mobile && screenNumber === 3) ? scrollTop = screenHeight * (screenNumber - 1) - 200 : null;
-        window.scrollTo({
-            top: scrollTop,
-            behavior: 'smooth'
-        });
+    function goToScreen(screenNumber) {
+        const page2 = document.getElementById(`page${screenNumber}`)
+        page2.scrollIntoView({block: "end", inline: "nearest", behavior: 'smooth'})
     }
 
     useEffect(() => {
@@ -40,7 +36,7 @@ export default function Header() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
     return (
-        <StyledHeader>
+        <StyledHeader >
             <Image
                 src={prancheta}
                 width={400}
@@ -53,10 +49,10 @@ export default function Header() {
                 <p onClick={() => goToScreen(1)} className="text-underline">
                     Home
                 </p>
-                <p onClick={() => goToScreen(2, 300)} className="text-underline">
+                <p onClick={() => goToScreen(2)} className="text-underline">
                     Quem Somos
                 </p>
-                <p onClick={() => goToScreen(3, 400)} className="text-underline">
+                <p onClick={() => goToScreen(3)} className="text-underline">
                     Fale Conosco
                 </p>
             </ContainerHeader>

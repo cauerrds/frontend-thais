@@ -14,8 +14,8 @@ export default function Page3() {
 
 
     return (
-        <FaleConosco>
-            <div className="container-form">
+        <FaleConosco id="page3" >
+            <div className="container-form" >
                 <Formulario></Formulario>
 
                 {mobile ? <AsideFormulario></AsideFormulario> : null}

@@ -22,9 +22,8 @@ export default function MainContent() {
     }, []);
 
     return (
-        <StyledMain>
-            <Container>
-
+        <StyledMain id="page1">
+            <Container >
                 <div className="box">
                     <Aside>
                         <h1 className="titulo">Consumidor</h1>
