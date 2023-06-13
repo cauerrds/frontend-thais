@@ -5,11 +5,15 @@ background-image: url("../assets/cidade.png");
 background-size: cover;
 background-position: center center;
 
+display: flex;
+flex-direction: column;
+
 .container-form {
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom:20px;
 }
 
 svg {
