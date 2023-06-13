@@ -13,7 +13,7 @@ export default function Page3() {
     }, [])
 
       const Map = dynamic(
-        () => import('@/components/map/map'), 
+        () => import('@/components/map/Map'), 
         { ssr: false }
         )
 
