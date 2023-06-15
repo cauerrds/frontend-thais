@@ -53,7 +53,7 @@ export default function Formulario() {
     };
 
     return (
-        <>
+        <div>
             <Form method="post" action="/enviar-email" onSubmit={handleSubmit}>
                 <div className="box outerBox">
                     <div className="box container-menor">
@@ -110,6 +110,6 @@ export default function Formulario() {
             />
             {/* Same as */}
             <ToastContainer />
-        </>
+        </div>
     )
 }

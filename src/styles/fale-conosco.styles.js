@@ -16,6 +16,12 @@ flex-direction: column;
     margin-bottom:20px;
 }
 
+.mapContainer{
+    border: 5px solid rgb(242, 238, 229);
+    width: 100%;
+    max-width: 400px;
+}
+
 svg {
     margin-right: 5px;
     color: var(--primary-whatsapp)
@@ -30,6 +36,17 @@ svg {
     div {
         margin-top: 0;
 
+    }
+
+
+    .container-form{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mapContainer{
+        border: none;
+        padding: 5px;
     }
 }
 

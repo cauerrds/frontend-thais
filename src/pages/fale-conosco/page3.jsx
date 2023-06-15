@@ -21,10 +21,11 @@ export default function Page3() {
         <FaleConosco id="page3" >
             <div className="container-form" >
                 <Formulario></Formulario>
-
+                <div className='mapContainer'>
+                    <Map/>
+                </div>
                 {mobile ? <AsideFormulario></AsideFormulario> : null}
             </div>
-            <Map/>
         </FaleConosco>
     )
 }
