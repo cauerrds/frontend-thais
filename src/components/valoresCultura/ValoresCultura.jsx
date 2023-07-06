@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { ContainerValores, ContainerJustiça } from "./styles"
-import banco from '../../../public/assets/banco.png'
-import terno from '../../../public/assets/terno.png'
 import thais from '../../../public/assets/thais.jpeg'
 import Image from "next/image"
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -10,7 +8,6 @@ import { Carousel } from 'react-responsive-carousel';
 
 export default function ValoresCultura() {
     const [mobile, setMobile] = useState(false)
-    const [selected, setSelected] = useState(null)
 
     useEffect(() => {
         if (typeof window !== 'undefined') { // verifica se o código está sendo executado no cliente
@@ -24,7 +21,7 @@ export default function ValoresCultura() {
     return (
             <ContainerValores mobile={mobile}>
                 <ContainerJustiça>
-                    <h1>Nós praticamos a Justiça.</h1>
+                    <h1>Nós praticamos a Justiça!</h1>
                 </ContainerJustiça>
                 <div className='content'>
                     <Image src={thais}/>
