@@ -34,7 +34,7 @@ height: 60vh;
 
 .conteudo {
     font-size: 58px;
-    font-family: 'GFS Didot', serif;
+    font-family: 'Great Vibes', cursive;
     font-style: italic;
 
 }
@@ -72,6 +72,9 @@ display: flex;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Great Vibes', cursive;
+    align-self: flex-end;
+
 }
 
 h1 {
@@ -81,7 +84,12 @@ h1 {
 }
 
 p {
+    margin-top: 120px;
     padding: 0 30px 0 30px;
+
+    @media (max-width: 1100px) {
+        margin-top: 0;
+    }
 }
 
 .icon {

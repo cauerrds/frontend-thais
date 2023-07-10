@@ -38,7 +38,7 @@ export default function ValoresCultura() {
 
                             <div className='carousel-item'>Independentemente da complexidade do seu caso, você pode contar com nossa equipe dedicada para trabalhar incansavelmente em busca de uma solução favorável. Nossa prioridade é proteger seus interesses e alcançar os melhores resultados possíveis. Combinando experiência, expertise jurídica e uma abordagem voltada para o cliente, nos destacamos no campo do direito do consumidor e direito bancário.</div>
 
-                            <div className='carousel-item'>Estamos prontos para lutar por seus direitos e ajudá-lo a obter a justiça que você merece!</div>
+                            <div className='carousel-item'><br/><br/><br/><br/>Estamos prontos para lutar por seus direitos e ajudá-lo a obter a justiça que você merece!</div>
                         </Carousel>   
                     </div>
                 </div>

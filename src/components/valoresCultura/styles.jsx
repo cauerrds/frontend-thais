@@ -39,7 +39,7 @@ justify-content: space-around;
 
   .carousel-item {
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 28px;
   }
 
   img {
@@ -54,8 +54,8 @@ justify-content: space-around;
   .content {
     width: 100%;
     .carousel-item{
-     font-size: 18px;
-   }
+     font-size: 20px;
+    }
 
   }
 }
@@ -85,8 +85,10 @@ justify-content: space-around;
 `
 
 export const ContainerJustiça = styled.div`
+
 margin-top: 20px;
 margin-bottom: 20px;
+
 h1 {
   color: #3c2505;
   font-size: 80px;
@@ -98,6 +100,7 @@ h1 {
     font-size: 40px;
     text-align: center;
   }
+  
 }
 
 @media (max-width: 370px){
