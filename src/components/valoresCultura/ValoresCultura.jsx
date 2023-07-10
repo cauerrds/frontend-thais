@@ -4,6 +4,7 @@ import thais from '../../../public/assets/thais.jpeg'
 import Image from "next/image"
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import BackGround from '../backGround/BackGround';
 
 
 export default function ValoresCultura() {
