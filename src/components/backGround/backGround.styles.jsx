@@ -22,7 +22,7 @@ export const Container = styled.div`
             list-style: none;
             width: 20px;
             height: 20px;
-            background: #4d091f;
+            background: rgb(30%, 4%, 12%, 50%);
             animation: animate 25s linear infinite;
             bottom: -150px;
 
