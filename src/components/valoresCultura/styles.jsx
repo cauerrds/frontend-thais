@@ -79,6 +79,9 @@ justify-content: space-around;
      font-size: 20px;
     }
 
+    img {
+      max-width: 90%;
+    }
   }
 }
 
@@ -110,6 +113,7 @@ h1 {
     font-size: 30px;
     text-align: center;
   }
+
 }
 
 
