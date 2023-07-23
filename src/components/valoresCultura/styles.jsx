@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContainerValores = styled.div`
 width: 100vw;
 max-width: 100vw;
-height: calc(100vh - 100px);
+min-height: calc(100vh - 100px);
 //background-color: #f2eee5;
 background-color: transparent;
 
@@ -23,6 +23,8 @@ justify-content: space-around;
   column-gap: 10px;
  
   .carousel-wrapper{
+    font-family: 'Great Vibes', cursive;
+    font-style: italic;
     width: 100%;
     max-width: 500px;
     padding: 5px;
@@ -50,22 +52,11 @@ justify-content: space-around;
   }
 }
 
-@media (max-width: 470px) {
-  .content {
-    width: 100%;
-    .carousel-item{
-     font-size: 20px;
-    }
-
-  }
-}
-
 @media (max-width: 900px){
   //background: rgb(242,238,229);
 
-
-  .content > img {
-    display: none;
+  .content{
+    flex-direction: column;
   }
 
   @keyframes myAnim {
@@ -80,6 +71,17 @@ justify-content: space-around;
     }
   }
 }
+
+@media (max-width: 470px) {
+  .content {
+    width: 100%;
+    .carousel-item{
+     font-size: 20px;
+    }
+
+  }
+}
+
 
 
 `

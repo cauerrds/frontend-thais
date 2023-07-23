@@ -4,9 +4,17 @@ export const Container = styled.div`
     background: #f2eee5;  
     background: linear-gradient(259deg, rgba(242,238,229,1) 54%, rgba(208,209,194,1) 100%);  
     width: 100%;
-    height:100vh;
+    height: 120%;
     z-index: -1;
     position: absolute;
+
+
+    @media (max-width: 900px) {
+    height: 200%;
+    
+
+    }
+
 
     .circles{
         position: absolute;
